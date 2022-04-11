@@ -1,1 +1,1 @@
-Educational project of an online clothing store
+Educational project of an online clothing store!
