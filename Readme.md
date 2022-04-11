@@ -1,0 +1,1 @@
+Educational project of an online clothing store
