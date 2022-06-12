@@ -1,0 +1,104 @@
+.shopping-cart__title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 19px;
+    color: #f3909d;
+    text-transform: uppercase;
+
+    &-wrapper {
+        background-color: #f8f3f4;
+        width: 100%;
+        padding: 40px 0 40px 0;
+        margin: 0 0 96px;
+    }
+}
+
+.cart {
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 0 128px;
+    }
+    &__products-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__products-list {
+        display: flex;
+        flex-direction: column;
+        
+
+        & :last-child{
+            margin: 0;
+        }
+    }
+
+    &__products-list {
+        margin:  0 0 72px;
+    }
+
+
+    &__products-item {
+        display: flex;
+        margin: 0 0 40px;
+        box-shadow: 11px 11px 15px 0px rgba(50, 50, 50, 0.5);
+    }
+
+    &__products-item-wrapper {
+        padding: 22px 97px 62px 32px;
+    }
+
+    &__products-item-title {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        color: #222222;
+        margin: 0 0 42px;
+        text-transform: uppercase;
+    }
+
+    &__products-list-description :last-child {
+        margin: 0;
+    }
+
+    &__products-list-description-item {
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 26px;
+        color: #575757;
+        margin: 0 0 6px;
+    }
+    &__products-list-description-item_color-pink {
+        color: $dark-pink;
+    }
+
+    &__button-wrapper {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    &__button {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: #a4a4a4;
+        text-transform: uppercase;
+        padding: 15px 40px;
+        background-color: transparent;
+        border: 1px solid #A4A4A4;
+
+        &:hover,:focus {
+            background-color: $dark-pink;
+            cursor: pointer;
+            color: #fff;
+        }
+
+        &:active {
+            opacity: 0.7;
+        }
+    }
+
+}

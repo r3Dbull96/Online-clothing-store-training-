@@ -1,0 +1,88 @@
+.subscribe {
+
+    &__wrapper-background{
+        background-image: url(../img/bcg_subscribe.jpg);
+        background-repeat: no-repeat;
+        padding: 86px 0 156px;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    &__section {
+        width: 360px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    &__img {
+        margin: 0 0 30px;
+    }
+    
+    &__text {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        color: #222224;
+    }
+    
+    &__title {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 167.2%;
+        color: #222224;
+    }
+    
+    &__text_size {
+        text-transform: uppercase;
+        font-size: 18px;
+        margin: 0 0 32px;
+    }
+    
+    &__input {
+        background: #e1e1e1;
+        padding: 0 0 0 25px;
+        border: none;
+        border-radius: 20px 0 0 20px;
+        color: #000;
+        cursor: text;
+        outline: none;
+        width: 235px;
+        &:hover,
+        :focus {
+            cursor: text;
+    }
+
+    }
+    &__input-button {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #ffffff;
+        background: #f16d7f;
+        border: none;
+        padding: 14px;
+        border-radius: 0 20px 20px 0;
+
+        &:hover,
+        :focus {
+            opacity: 80%;
+            cursor: pointer;
+        }
+        
+        &:active {
+            opacity: 100%;
+            color: #000;
+        }
+
+    }
+    &__wrapper-input {
+        display: flex;
+    }
+}

@@ -1,0 +1,61 @@
+.brand {
+
+    &__wrapper{
+        display: flex;
+        margin: 0 0 63px;
+    }
+
+    &__title {
+        font-family: "Lato";
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 58px;
+        text-transform: uppercase;
+        position: relative;
+
+        &:before{
+            content: '';
+            width: 4px;
+            height: 100%;
+            background-color: $dark-pink;
+            position: absolute;
+            left: -20px;
+        }
+    }
+    
+    &__title-wrapper {
+        background-color: $pink;
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        padding: 0 0 0 92px;
+    }
+    
+    &__subtitle {
+        display: block;
+        font-size: 37px;
+        font-weight: 700;
+        line-height: 44px;
+    }
+    
+    &__subtitle-pink {
+        color: $dark-pink;
+    }
+
+    &__wrapper-overlay{
+        position: relative;
+        width: 100%;
+
+        &:before{
+            content: "";
+            width: 100%;
+            min-height: 765px;
+            background: rgba(0, 0, 0, 0.4);
+            position: absolute;
+            top: 0;
+            display: block;
+        }
+    }
+
+}
+

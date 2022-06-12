@@ -1,0 +1,136 @@
+.header {
+    background-color: $dark-blue;
+
+    &__controls {
+    display: flex;
+    align-items: baseline;
+    }
+
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        min-height: 75px;
+        justify-content: space-between;
+        position: relative;
+    }
+    
+    &__button {
+        background-color: transparent;
+        border: none;
+        margin: 0 34px 0 0;
+
+        &:hover,:focus {
+            cursor: pointer;
+            opacity: 0.7;
+        }
+
+        &:active {
+            opacity: 1;
+            cursor: pointer;
+        }
+    }
+
+    &__logo-link {
+        margin: 0 41px 0 0;
+
+        &:hover,:focus {
+            opacity: 0.7;
+            cursor: pointer;
+        }
+
+        &:active {
+            opacity: 1;
+            cursor: pointer;
+        }
+    }
+
+    &__person-link {
+        margin: 0 34px 0 0;
+
+        &:hover,:focus {
+            cursor: pointer;
+            opacity: 0.7;
+        }
+    
+        &:active {
+            opacity: 1;
+            cursor: pointer;
+        }
+
+    }
+
+    &__cart {
+
+        &:hover,:focus {
+            cursor: pointer;
+            opacity: 0.7;
+        }
+        
+        &:active {
+            opacity: 1;
+            cursor: pointer;
+        }
+
+    }
+
+    &__navigation{
+    position: absolute;
+    min-width: 285px;
+    min-height: 765px;
+    top: 100%;
+    z-index: 1;
+    right: -105px;
+    background: #FFFFFF;;
+    display: none;
+    box-shadow: 0 0 10px;
+    }
+
+    &__navigation-wrapper{
+        padding: 37px 0 0 34px;
+    }
+
+    &__navigation-title{
+        display: block;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        color: #000000;
+        margin: 0 0 24px;
+    }
+
+    &__navigation-subtitle{
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #f16d7f;
+        margin: 20px 0 12px;
+    }
+
+    &__navigation-link{
+        display: block;
+        width: fit-content;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #6F6E6E;
+        text-decoration: none;
+        margin: 0 0 11px;
+
+        &:hover{
+            opacity: 0.5;
+        }
+
+        &:active{
+            color: #000000;
+            opacity: 1;
+        }
+    }
+
+}
+
+.display-block{
+    display: block;
+}
+
