@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
-    <title>Registration</title>
+    <title>Cart</title>
 </head>
 <body>
     <header class="header">
@@ -83,44 +83,63 @@
 
     </header>
     <main>
-        <section class="person-data">
-        <div class="person-data__title-wrapper">
-            <h2 class="person-data__title container">registration</h2>
-        </div>
-        <div class="container">
-            <div class="person-data__wrapper ">
-                <form class="person-data__section-login" action="" method="post">
-                    <fieldset class="person-data__name">
-                        <legend class="person-data__section-caption">Your Name</legend>
-                        <input class="person-data__entering-information" type="text" name="" id="firstname" placeholder="First Name">
-                        <input class="person-data__entering-information" type="text" name="" id="lastname" placeholder="Last Name">
-                        <div class="person-data__section-caption_wrapper">
-                            <input class="person-data__radio-input_male" type="radio" name="gender" id="male">
-                            <label class="person-data__input-label_male" for="male">Male</label>
-                            <input class="person-data__radio-input_female" type="radio" name="gender" id="female">
-                            <label class="person-data__input-label_female" for="female">Female</label>
+        <header class="shopping-cart__title-wrapper">
+            <h2 class="shopping-cart__title container">shopping cart</h2>
+        </header>
+        <section class="cart">
+            <div class="container">
+                <div class="cart__wrapper">
+                    <div class="cart__products-wrapper">
+                        <ul class="cart__products-list">
+                            <li class="cart__products-item">
+                                <img src="img/men-1_cart.jpg" alt="man">
+                                <div class="cart__products-item-wrapper">
+                                    <h3 class="cart__products-item-title">mango people <br />t-shirt</h3>
+                                    <ul class="cart__products-list-description">
+                                        <li class="cart__products-list-description-item">Price: <span class="cart__products-list-description-item cart__products-list-description-item_color-pink">$300</span></li>
+                                        <li class="cart__products-list-description-item">Color: Red</li>
+                                        <li class="cart__products-list-description-item">Size: Xl</li>
+                                        <li class="cart__products-list-description-item">Quantity: 2</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="cart__products-item">
+                                <img src="img/men-2_cart.jpg" alt="man">
+                                <div class="cart__products-item-wrapper">
+                                    <h3 class="cart__products-item-title">mango  people  <br />t-shirt</h3>
+                                    <ul class="cart__products-list-description">
+                                        <li class="cart__products-list-description-item">Price: <span class="cart__products-list-description-item cart__products-list-description-item_color-pink">$300</span></li>
+                                        <li class="cart__products-list-description-item">Color: Red</li>
+                                        <li class="cart__products-list-description-item">Size: Xl</li>
+                                        <li class="cart__products-list-description-item">Quantity: 2</li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="cart__button-wrapper">
+                            <button class="cart__button" type="reset">clear shopping cart</button>
+                            <button class="cart__button " type="submit">continue shopping</button>
                         </div>
-                    </fieldset>
-                    <fieldset class="person-data__login">
-                        <legend class="person-data__section-caption">Login detalis</legend>
-                        <input class="person-data__entering-information" type="email" name="email-login" id="" placeholder="Email">
-                        <input class="person-data__entering-information" type="password" name="password-login" id="" placeholder="Password">
-                    </fieldset>
-                    <button class="person-data__button" type="submit">join now <span class="person-data__button_decoration">→</span></button>
-                </form>
-                <div class="person-data__section">
-                    <h2 class="person-data__section-title">loyalty has its perks</h2>
-                    <p class="person-data__text">Get in on the loyalty program where you can earn points and unlock serious perks.Starting with these as soon as you join:</p>
-                    <ul>
-                        <li class="person-data__text person-data__text-margin">15% off welcome offer</li>
-                        <li class="person-data__text person-data__text-margin">Free shipping, returns and exchanges on all orders</li>
-                        <li class="person-data__text person-data__text-margin">$10 off a purchase on your birthday</li>
-                        <li class="person-data__text person-data__text-margin">Early acces to products</li>
-                        <li class="person-data__text person-data__text-margin">Exclusive offers & rewards</li>
-                    </ul>
+                    </div>
+                    <section class="shopping-registration">
+                        <div class="shopping-registration__wrapper">
+                            <form class="shopping-registration__section-shipping" action="#" method="post">
+                                <h2 class="shopping-registration__title">shipping adress</h2>
+                                <input class="shopping-registration__input" type="text" name="" id="" placeholder="Bangladesh">
+                                <input class="shopping-registration__input" type="text" name="" id="" placeholder="State">
+                                <input class="shopping-registration__input" type="number" name="" id="" placeholder="Postcode / Zip">
+                                <button class="shopping-registration__button-shipping" type="submit">get a quote</button>
+                            </form>
+                            <div class="shopping-registration__section">
+                                <p class="shopping-registration__text">sub total <span class="shopping-registration__text-prise-padding">$900</span></p>
+                                <p class="shopping-registration__text-grand">grand total <span class="shopping-registration__text-grand shopping-registration__text-grand_color-pink">$900</span></p>
+                                <hr class="shopping-registration__line">
+                                <button class="shopping-registration__button-checkout" type="submit">proceed to checkout</button>
+                            </div>
+                        </div>
+                    </section>
                 </div>
             </div>
-        </div>
         </section>
     </main>
     <footer>
@@ -199,6 +218,6 @@
             </div>
         </section>
     </footer>
-    <script src="/js/scripts.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>

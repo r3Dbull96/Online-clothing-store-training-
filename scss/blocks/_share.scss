@@ -1,0 +1,35 @@
+.share {
+
+    &__wrapper-background{
+    background: #222224;
+    padding: 30px 0 30px;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    &__text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #fbfbfb;
+    }
+
+    &__link{
+        text-decoration: none;
+
+        :hover,:focus {
+            opacity: 0.7;
+            cursor: pointer;
+        }
+
+        :active{
+            opacity: 1;
+            cursor: pointer;
+        }
+
+    }
+}
