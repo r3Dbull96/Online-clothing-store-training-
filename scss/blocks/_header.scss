@@ -47,6 +47,10 @@
     &__person-link {
         margin: 0 34px 0 0;
 
+        @include mobile {
+            display: none;
+        }
+
         &:hover,:focus {
             cursor: pointer;
             opacity: 0.7;
@@ -61,15 +65,19 @@
 
     &__cart {
 
-        &:hover,:focus {
-            cursor: pointer;
-            opacity: 0.7;
-        }
-        
-        &:active {
-            opacity: 1;
-            cursor: pointer;
-        }
+    @include mobile {
+        display: none;
+    }
+
+    &:hover,:focus {
+        cursor: pointer;
+        opacity: 0.7;
+    }
+    
+    &:active {
+        opacity: 1;
+        cursor: pointer;
+    }
 
     }
 

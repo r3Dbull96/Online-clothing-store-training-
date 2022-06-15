@@ -9,6 +9,11 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @include mobile {
+            flex-direction: column-reverse;
+        }
+
     }
     
     &__text {
@@ -29,6 +34,14 @@
         :active{
             opacity: 1;
             cursor: pointer;
+        }
+
+    }
+
+    &__social {
+
+        @include mobile {
+            margin: 0 0 40px;
         }
 
     }

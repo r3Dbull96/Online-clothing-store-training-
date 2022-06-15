@@ -4,11 +4,35 @@
     &__list {
         display: flex;
         justify-content: space-between;
+        padding: 103px 0;
+
+        @include tablet {
+            flex-direction: column;
+            align-items: center;
+
+            :nth-child(3) {
+                margin: 0;
+            }
+
+        }
+
+        @include mobile {
+            padding: 48px 0 81px;
+        }
+
     }
     
     &__item {
-        width: 360px;
-        padding: 103px 0;
+        width: 48%;
+
+        @include tablet {
+            margin: 0 0 48px;
+        }
+
+        @include mobile {
+            width: 100%;
+        }
+
     }
     
     &__img-wrapper {

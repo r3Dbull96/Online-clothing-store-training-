@@ -2,21 +2,40 @@
 
     &__wrapper-background{
         background-image: url(../img/bcg_subscribe.jpg);
-        background-repeat: no-repeat;
         padding: 86px 0 156px;
+        background-size: cover;
+
+        @include tablet {
+            padding: 53px 0 140px;
+        }
+
+        @include mobile {
+            padding: 54px 0 110px;
+        }
+
     }
 
     &__wrapper {
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @include tablet {
+            flex-direction: column;
+        }
+
     }
     
     &__section {
-        width: 360px;
+        width: 32%;
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        @include mobile {
+            width: 100%;
+        }
+
     }
     
     &__img {
@@ -29,6 +48,15 @@
         line-height: 24px;
         text-align: center;
         color: #222224;
+
+        @include tablet {
+            margin: 0 0 50px;
+        }
+
+        @include mobile {
+            margin: 0 0 60px;
+        }
+
     }
     
     &__title {
@@ -43,6 +71,11 @@
         text-transform: uppercase;
         font-size: 18px;
         margin: 0 0 32px;
+
+        @include mobile {
+            margin: 0 0 22px;
+        }
+
     }
     
     &__input {
@@ -54,6 +87,8 @@
         cursor: text;
         outline: none;
         width: 235px;
+        box-sizing: border-box;
+
         &:hover,
         :focus {
             cursor: text;
