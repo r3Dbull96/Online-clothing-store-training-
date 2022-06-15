@@ -82,17 +82,17 @@
         </div>
 
     </header>
+    <header class="shopping-cart__title-wrapper">
+        <h2 class="shopping-cart__title container">shopping cart</h2>
+    </header>
     <main>
-        <header class="shopping-cart__title-wrapper">
-            <h2 class="shopping-cart__title container">shopping cart</h2>
-        </header>
         <section class="cart">
             <div class="container">
                 <div class="cart__wrapper">
                     <div class="cart__products-wrapper">
                         <ul class="cart__products-list">
                             <li class="cart__products-item">
-                                <img src="img/men-1_cart.jpg" alt="man">
+                                <img class="cart__products-img" src="img/men-1_cart.jpg" alt="man">
                                 <div class="cart__products-item-wrapper">
                                     <h3 class="cart__products-item-title">mango people <br />t-shirt</h3>
                                     <ul class="cart__products-list-description">
@@ -104,7 +104,7 @@
                                 </div>
                             </li>
                             <li class="cart__products-item">
-                                <img src="img/men-2_cart.jpg" alt="man">
+                                <img class="cart__products-img" src="img/men-2_cart.jpg" alt="man">
                                 <div class="cart__products-item-wrapper">
                                     <h3 class="cart__products-item-title">mango  people  <br />t-shirt</h3>
                                     <ul class="cart__products-list-description">
@@ -117,24 +117,24 @@
                             </li>
                         </ul>
                         <div class="cart__button-wrapper">
-                            <button class="cart__button" type="reset">clear shopping cart</button>
-                            <button class="cart__button " type="submit">continue shopping</button>
+                            <button class="cart__button" type="reset">Clear shopping cart</button>
+                            <button class="cart__button " type="submit">Continue shopping</button>
                         </div>
                     </div>
-                    <section class="shopping-registration">
-                        <div class="shopping-registration__wrapper">
-                            <form class="shopping-registration__section-shipping" action="#" method="post">
-                                <h2 class="shopping-registration__title">shipping adress</h2>
-                                <input class="shopping-registration__input" type="text" name="" id="" placeholder="Bangladesh">
-                                <input class="shopping-registration__input" type="text" name="" id="" placeholder="State">
-                                <input class="shopping-registration__input" type="number" name="" id="" placeholder="Postcode / Zip">
-                                <button class="shopping-registration__button-shipping" type="submit">get a quote</button>
+                    <section class="cart__registration">
+                        <div class="cart__registration-wrapper">
+                            <form class="cart__registration-section-shipping" action="#" method="post">
+                                <h2 class="cart__registration-title">shipping adress</h2>
+                                <input class="cart__registration-input" type="text" name="" id="" placeholder="Bangladesh">
+                                <input class="cart__registration-input" type="text" name="" id="" placeholder="State">
+                                <input class="cart__registration-input" type="number" name="" id="" placeholder="Postcode / Zip">
+                                <button class="cart__registration-button-shipping" type="submit">get a quote</button>
                             </form>
-                            <div class="shopping-registration__section">
-                                <p class="shopping-registration__text">sub total <span class="shopping-registration__text-prise-padding">$900</span></p>
-                                <p class="shopping-registration__text-grand">grand total <span class="shopping-registration__text-grand shopping-registration__text-grand_color-pink">$900</span></p>
-                                <hr class="shopping-registration__line">
-                                <button class="shopping-registration__button-checkout" type="submit">proceed to checkout</button>
+                            <div class="cart__registration-section">
+                                <p class="cart__registration-text">sub total <span class="cart__registration-text-prise-padding">$900</span></p>
+                                <p class="cart__registration-text-grand">grand total <span class="shopping-registration__text-grand shopping-registration__text-grand_color-pink">$900</span></p>
+                                <hr class="cart__registration-line">
+                                <button class="cart__registration-button-checkout" type="submit">proceed to checkout</button>
                             </div>
                         </div>
                     </section>
@@ -167,7 +167,7 @@
                     <div>
                         <p class="share__text">© 2021 Brand All Rights Reserved.</p>
                     </div>
-                    <div>
+                    <div class="share__social">
                         <a class="share__link" href="#">
                             <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M31.4506 0H0V32H31.4506V0Z" fill="white"/>

@@ -3,7 +3,13 @@
     &__title-wrapper {
         background-color: #f8f3f4;
         width: 100%;
-        padding: 40px 0 40px 0;
+        padding: 59px 0 60px;
+        margin: 0 0 64px;
+
+        @include mobile {
+            margin: 0 0 40px;
+        }
+
     }
     
     &__title {
@@ -12,35 +18,69 @@
         line-height: 19px;
         color: #f3909d;
         text-transform: uppercase;
+
+        @include mobile {
+            text-align: center;
+        }
+
     }
-    
-    .person-data__title_wrapper {
-        min-width: 1138px;
-    }
-    
-    .person-data__wrapper {
+
+    &__wrapper {
         display: flex;
         justify-content: space-between;
-        margin: 50px 0 50px;
+        margin: 0 0 96px;
+
+        @include mobile {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 0 100px;
+        }
+
+    }
+
+    &__section-login{
+        width: 32%;
+
+        @include mobile {
+            width: 94%;
+            margin: 0 0 40px;
+        }
+
     }
     
-    .person-data__name,
-    .person-data__login {
+    &__name{
         display: flex;
         flex-direction: column;
-        margin: 0 0 20px 0;
+        margin: 0 0 32px 0;
     }
     
-    .person-data__section-caption,
-    .person-data__section-title {
+    &__login {
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 40px 0;
+    }
+    
+    &__section-caption {
         font-weight: 400;
         font-size: 16px;
         line-height: 19px;
         color: #9f9f9f;
         margin: 0 0 20px 0;
     }
-    
-    .person-data__section-caption_wrapper {
+
+    &__section-title {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #9f9f9f;
+        margin: 0 0 20px 0;
+        
+        @include tablet {
+            margin: 0 0 32px;
+        }
+    }
+
+    &__section-caption_wrapper {
         display: flex;
     }
     
@@ -84,11 +124,14 @@
         background: #9f9f9f;
     }
     
-    .person-data__entering-information {
-        margin: 0 0 10px 0;
+    &__entering-information {
+        margin: 0 0 21px 0;
         border: 2px solid #ccc;
         outline: none;
-        padding: 10px 130px 10px 20px;
+        width: 100%;
+        height: 45px;
+        padding: 0 0 0 15px;
+        box-sizing: border-box;
 
         &:focus {
             background-color: #fff;
@@ -97,16 +140,31 @@
         }
     }
 
-    .person-data__text {
-        margin: 0 0 10px 0;
+    &__entering-information_margin-lastname {
+        margin: 0 0 32px;
+    }
+
+    &__entering-information_margin-password {
+        margin: 0 0 15px;
+    }
+
+    &__password-requirement {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+    }
+
+    &__text {
+        margin: 0 0 21px;
         font-weight: 400;
         font-size: 18px;
         line-height: 19px;
         color: #9f9f9f;
     }
     
-    .person-data__text-margin {
-        margin: 0 0 10px 25px;
+    &__text-margin {
+        margin: 0 0 15px 25px;
         position: relative;
 
         &:before {
@@ -148,7 +206,12 @@
     }
     
     .person-data__section {
-        max-width: 470px;
+        width: 57%;
+
+        @include mobile {
+            width: 100%;
+        }
+
     }
     
     .person-data__title,

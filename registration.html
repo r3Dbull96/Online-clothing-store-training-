@@ -93,7 +93,7 @@
                     <fieldset class="person-data__name">
                         <legend class="person-data__section-caption">Your Name</legend>
                         <input class="person-data__entering-information" type="text" name="" id="firstname" placeholder="First Name">
-                        <input class="person-data__entering-information" type="text" name="" id="lastname" placeholder="Last Name">
+                        <input class="person-data__entering-information person-data__entering-information_margin-lastname" type="text" name="" id="lastname" placeholder="Last Name">
                         <div class="person-data__section-caption_wrapper">
                             <input class="person-data__radio-input_male" type="radio" name="gender" id="male">
                             <label class="person-data__input-label_male" for="male">Male</label>
@@ -104,7 +104,8 @@
                     <fieldset class="person-data__login">
                         <legend class="person-data__section-caption">Login detalis</legend>
                         <input class="person-data__entering-information" type="email" name="email-login" id="" placeholder="Email">
-                        <input class="person-data__entering-information" type="password" name="password-login" id="" placeholder="Password">
+                        <input class="person-data__entering-information person-data__entering-information_margin-password" type="password" name="password-login" id="" placeholder="Password">
+                        <p class="person-data__password-requirement">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>
                     </fieldset>
                     <button class="person-data__button" type="submit">join now <span class="person-data__button_decoration">→</span></button>
                 </form>
@@ -148,7 +149,7 @@
                     <div>
                         <p class="share__text">© 2021 Brand All Rights Reserved.</p>
                     </div>
-                    <div>
+                    <div class="share__social">
                         <a class="share__link" href="#">
                             <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M31.4506 0H0V32H31.4506V0Z" fill="white"/>

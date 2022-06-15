@@ -1,17 +1,43 @@
-.shopping-registration {
+.cart__registration {
 
-    &__wrapper{
-        display: flex;
-        flex-direction: column;
+    width: 32%;
+
+    @include tablet {
+        width: 100%;
     }
 
-    &__section-shipping{
+    &-wrapper {
+        display: flex;
+        flex-direction: column;
+
+        @include tablet {
+            flex-direction: unset;
+            justify-content: space-between;
+        }
+
+        @include mobile {
+            flex-direction: column;
+        }
+
+    }
+
+    &-section-shipping{
         display: flex;
         flex-direction: column;
         margin: 0 0 57px;
+
+        @include tablet {
+            width: 48%;
+        }
+
+        @include mobile {
+            width: 100%;
+            margin: 0 0 48px;
+        }
+
     }
 
-    &__title {
+    &-title {
         text-transform: uppercase;
         font-weight: 300;
         font-size: 16px;
@@ -20,14 +46,15 @@
         margin: 0 0 21px;
     }
 
-    &__input {
+    &-input {
         margin: 0 0 21px;
-        width: 360px;
-        padding: 15px 0 15px 20px;
+        height: 44px;
+        padding: 0 0 0 20px;
         border: 1px solid #A4A4A4;
+        box-sizing: border-box;
     }
 
-    &__button-shipping{
+    &-button-shipping{
         text-transform: uppercase;
         max-width: 110px;
         padding: 10px 15px;
@@ -49,14 +76,26 @@
         }
     }
 
-    &__section{
+    &-section{
         padding: 42px;
         background: #F5F3F3;
         display: flex;
         flex-direction: column;
+        box-sizing: border-box;
+        height: 214px;
+
+        @include tablet {
+            width: 48%;
+            margin: 40px 0 0;
+        }
+
+        @include mobile {
+            width: 100%;
+        }
+
     }
 
-    &__text {
+    &-text {
         margin: 0 0 12px;
         text-align: end;
         font-weight: 400;
@@ -66,7 +105,7 @@
         text-transform: uppercase;
     }
 
-    &__text-grand {
+    &-text-grand {
         margin: 0 0 21px;
         text-align: end;
         font-size: 16px;
@@ -80,18 +119,18 @@
         }
     }
 
-    &__text-prise-padding {
+    &-text-prise-padding {
         padding: 0 0 0 20px;
     }
 
-    &__line {
+    &-line {
         margin: 0 0 17px;
         border-color: #E2E2E2;
         align-self: center;
         width: 280px;
     }
 
-    &__button-checkout {
+    &-button-checkout {
         font-weight: 300;
         font-size: 16px;
         line-height: 19px;

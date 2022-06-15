@@ -3,6 +3,20 @@
     &__wrapper{
         display: flex;
         margin: 0 0 63px;
+
+        @include tablet {
+            margin: 0 0 20px;
+        }
+    }
+
+    &__img{
+
+        width: 50%;
+        height: auto;
+
+        @include mobile {
+            display: none;
+        }
     }
 
     &__title {
@@ -12,6 +26,16 @@
         line-height: 58px;
         text-transform: uppercase;
         position: relative;
+
+        @include tablet {
+            font-size: 44px;
+            line-height: 53px;
+        }
+
+        @include mobile {
+            font-size: 38px;
+            line-height: 46px;
+        }
 
         &:before{
             content: '';
@@ -29,6 +53,10 @@
         display: flex;
         align-items: center;
         padding: 0 0 0 92px;
+
+        @include mobile {
+            min-height: 363px;
+        }
     }
     
     &__subtitle {
@@ -36,6 +64,17 @@
         font-size: 37px;
         font-weight: 700;
         line-height: 44px;
+
+        @include tablet {
+            font-size: 24px;
+            line-height: 29px;
+        }
+
+        @include tablet {
+            font-size: 20px;
+            line-height: 24px;
+        }
+
     }
     
     &__subtitle-pink {

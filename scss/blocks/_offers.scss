@@ -4,16 +4,32 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        margin: 0 0 96px;
+
+        @include mobile {
+            margin: 0 0 64px;
+        }
+
     }
 
     .offers__item {
-        width: 360px;
+        width: 32%;
         min-height: 260px;
         background-color: $brown;
         margin: 0 0 30px;
         display: flex;
         justify-content: center;
         align-items: center;
+        background-size: cover;
+        background-position: center;
+
+        @include tablet {
+            min-height: 168px;
+        }
+
+        @include mobile {
+            width: 100%;
+        }
 
         &_woman {
             background-image: url(../img/woman.jpg);
