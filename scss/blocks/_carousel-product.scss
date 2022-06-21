@@ -1,0 +1,5 @@
+.carousel-product__wrapper {
+    @include tablet {
+        margin-bottom: 1.5rem;
+    }
+}

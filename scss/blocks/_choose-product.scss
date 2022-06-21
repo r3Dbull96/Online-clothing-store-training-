@@ -1,0 +1,28 @@
+.choose-product {
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__text-wrapper {
+        display: flex;
+        margin:  0 0 48px;
+    }
+
+    &__text {
+        text-transform: uppercase;
+        font-size: 14px;
+        line-height: 17px;
+        color: #6F6E6E;
+        background-color: transparent;
+        border: none;
+
+        @include mobile {
+            font-size: 10px;
+            line-height: 12px;
+        }
+    }
+
+}

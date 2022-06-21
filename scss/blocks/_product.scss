@@ -1,0 +1,30 @@
+.product-title-wrapper {
+    margin: 0;
+
+    @include mobile {
+        padding: 24px 69px 46px;
+    }
+}
+
+.product-title {
+    @include mobile {
+        margin: 0 0 32px;
+    }
+}
+
+.product-header-text {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #636363;
+
+    &-color {
+        color: $dark-pink;
+        font-weight: 700;
+    }
+
+    @include mobile {
+        text-align: center;
+    }
+}
