@@ -72,6 +72,7 @@
         transform: translate(-50%, -50%);
         background: transparent;
         border: 1px solid #ffffff;
+        padding: 5px;
         display: none;
         
         :active {
@@ -86,15 +87,8 @@
         font-size: 14px;
         line-height: 17px;
         color: #ffffff;
-        padding: 0 15px 0 0;
         border: none;
         position: relative;
-        bottom: 15px;
-
-    }
-    
-    &__cart {
-        padding: 10px 11px 8px 13px;
     }
     
     &__card-title {

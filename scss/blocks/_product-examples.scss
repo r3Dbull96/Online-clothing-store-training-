@@ -1,0 +1,33 @@
+.product-examples {
+
+    &__grid-container {
+        margin-bottom: 1.5rem;
+    }
+
+    &__img {
+        width: 100%;
+        height: auto;
+    }
+
+    &__woman-none {
+
+        @include tablet {
+            display: none;
+        }
+        
+        @include mobile {
+            display: block;
+        }
+
+    }
+
+    &__men-none {
+
+        @include mobile {
+            display: none;
+        }
+
+    }
+    
+
+}
