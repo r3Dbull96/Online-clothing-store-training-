@@ -20946,6 +20946,7 @@ body {
   background-color: transparent;
   border: none;
   margin: 0 34px 0 0;
+  transition: opacity 0.5s;
 }
 
 .header__button:hover, .header__button :focus {
@@ -20960,6 +20961,7 @@ body {
 
 .header__logo-link {
   margin: 0 41px 0 0;
+  transition: opacity 0.5s;
 }
 
 .header__logo-link:hover, .header__logo-link :focus {
@@ -20974,6 +20976,7 @@ body {
 
 .header__person-link {
   margin: 0 34px 0 0;
+  transition: opacity 0.5s;
 }
 
 @media (max-width: 375px) {
@@ -20990,6 +20993,10 @@ body {
 .header__person-link:active {
   opacity: 1;
   cursor: pointer;
+}
+
+.header__cart {
+  transition: opacity 0.5s;
 }
 
 @media (max-width: 375px) {
@@ -21052,6 +21059,7 @@ body {
   color: #6F6E6E;
   text-decoration: none;
   margin: 0 0 11px;
+  transition: opacity 0.5s, color 0.5s;
 }
 
 .header__navigation-link:hover {
@@ -21324,6 +21332,7 @@ body {
   border: 1px solid #ffffff;
   padding: 5px;
   display: none;
+  transition: opacity 0.5s;
 }
 
 .products__button :active {
@@ -21365,6 +21374,7 @@ body {
 
 .products__item-wrapper-overlay {
   position: relative;
+  transition: display 0.5s;
 }
 
 .products__item-wrapper {
@@ -21398,6 +21408,7 @@ body {
   font-size: 16px;
   line-height: 19px;
   color: #f26376;
+  transition: background 0.5s, color  0.5s;
 }
 
 .products__button-all-wrapper {
@@ -21610,6 +21621,7 @@ body {
   border: none;
   padding: 14px;
   border-radius: 0 20px 20px 0;
+  transition: opacity 0.5s, color 0.5s;
 }
 
 .subscribe__input-button:hover,
@@ -21653,6 +21665,7 @@ body {
 
 .share__link {
   text-decoration: none;
+  transition: opacity 0.5s;
 }
 
 .share__link :hover, .share__link :focus {
@@ -21809,6 +21822,7 @@ body {
   height: 45px;
   padding: 0 0 0 15px;
   box-sizing: border-box;
+  transition: background-color 0.5s, color 0.5s;
 }
 
 .person-data__entering-information:focus {
@@ -21861,6 +21875,7 @@ body {
   color: #fff;
   background-color: #f16d7f;
   border: none;
+  transition: opacity 0.5s, color 0.5s;
 }
 
 .person-data .person-data__button:hover, .person-data .person-data__button :focus {
@@ -22083,6 +22098,7 @@ body {
   background-color: transparent;
   border: 1px solid #A4A4A4;
   height: 50px;
+  transition: background-color 0.5s, color 0.5s, opacity 0.5s;
 }
 
 @media (max-width: 375px) {
@@ -22179,6 +22195,7 @@ body {
   color: #4A4A4A;
   background-color: transparent;
   border: 1px solid #A4A4A4;
+  transition: background-color 0.5s, color 0.5s, opacity 0.5s;
 }
 
 .cart__registration-button-shipping:hover, .cart__registration-button-shipping :focus {
@@ -22258,6 +22275,7 @@ body {
   border: none;
   padding: 15px 40px;
   text-transform: uppercase;
+  transition: background-color 0.5s, color 0.5s, opacity 0.5s;
 }
 
 .cart__registration-button-checkout:hover, .cart__registration-button-checkout :focus {

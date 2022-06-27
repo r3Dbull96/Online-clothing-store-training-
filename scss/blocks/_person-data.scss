@@ -132,6 +132,7 @@
         height: 45px;
         padding: 0 0 0 15px;
         box-sizing: border-box;
+        transition: background-color 0.5s, color 0.5s;
 
         &:focus {
             background-color: #fff;
@@ -185,6 +186,7 @@
         color: #fff;
         background-color: $dark-pink;
         border: none;
+        transition: opacity 0.5s, color 0.5s;
 
         &:hover,:focus {
             cursor: pointer;

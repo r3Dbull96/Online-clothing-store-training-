@@ -104,6 +104,7 @@
         border: none;
         padding: 14px;
         border-radius: 0 20px 20px 0;
+        transition: opacity 0.5s, color 0.5s;
 
         &:hover,
         :focus {

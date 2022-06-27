@@ -165,6 +165,7 @@
         background-color: transparent;
         border: 1px solid #A4A4A4;
         height: 50px;
+        transition: background-color 0.5s, color 0.5s, opacity 0.5s;
 
         @include mobile {
             height: 33px;
