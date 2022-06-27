@@ -64,6 +64,7 @@
         color: #4A4A4A;
         background-color: transparent;
         border: 1px solid #A4A4A4;
+        transition: background-color 0.5s, color 0.5s, opacity 0.5s;
 
         &:hover,:focus {
             background-color: $dark-pink;
@@ -140,6 +141,7 @@
         border: none;
         padding: 15px 40px;
         text-transform: uppercase;
+        transition: background-color 0.5s, color 0.5s, opacity 0.5s;
 
         &:hover,:focus {
             background-color: #fff;

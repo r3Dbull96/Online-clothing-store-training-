@@ -74,6 +74,7 @@
         border: 1px solid #ffffff;
         padding: 5px;
         display: none;
+        transition: opacity 0.5s;
         
         :active {
             opacity: 1;
@@ -116,6 +117,7 @@
 
     &__item-wrapper-overlay {
         position: relative;
+        transition: display 0.5s;
     }
 
     &__item-wrapper{
@@ -151,6 +153,7 @@
     font-size: 16px;
     line-height: 19px;
     color: #f26376;
+    transition: background 0.5s, color  0.5s;
 
     &-wrapper {
         display: flex;
