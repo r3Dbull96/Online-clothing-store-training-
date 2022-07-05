@@ -24,5 +24,27 @@
             line-height: 12px;
         }
     }
+    &__button {
+        padding: 14px 38px;
+        border: 1px solid #ff6a6a;
+        background-color: transparent;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #f26376;
+        transition: background 0.5s, color 0.5s;
+
+    &:hover,
+        :focus {
+            color: #ffffff;
+            background-color: #ff6a6a;
+            cursor: pointer;
+        }
+    
+        &:active {
+            color: #000;
+        }
+
+    }
 
 }

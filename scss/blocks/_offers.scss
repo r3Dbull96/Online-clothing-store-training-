@@ -32,23 +32,27 @@
         }
 
         &_woman {
+            background-color: #fff;
             background-image: url(../img/woman.jpg);
             }
         
-            &_men {
-                background-image: url(../img/men_offers.jpg);
-            }
+        &_men {
+            background-color: #fff;
+            background-image: url(../img/men_offers.jpg);
+        }
         
-            &_kids {
-                background-image: url(../img/kids_offers.jpg);
-            }
+        &_kids {
+            background-color: #fff;
+            background-image: url(../img/kids_offers.jpg);
+        }
         
-            &_accesories {
-                background-image: url(../img/accesories_offers.jpg);
-                width: 100%;
-                background-size: cover;
-                margin: 0;
-            }
+        &_accesories {
+            background-color: #fff;
+            background-image: url(../img/accesories_offers.jpg);
+            width: 100%;
+            background-size: cover;
+            margin: 0;
+        }
     }
 
     .offers__features,

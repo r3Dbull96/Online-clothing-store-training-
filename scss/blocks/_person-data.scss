@@ -80,25 +80,25 @@
         }
     }
 
-    &__section-caption_wrapper {
+    &__section-caption-wrapper {
         display: flex;
     }
     
-    .person-data__radio-input_male,
-    .person-data__radio-input_female {
+    .person-data__radio-input-male,
+    .person-data__radio-input-female {
         display: none;
     }
     
-    .person-data__input-label_male {
+    .person-data__input-label-male {
         margin: 0 0 0 20px;
     }
     
-    .person-data__input-label_female {
+    .person-data__input-label-female {
         margin: 0 0 0 30px;
     }
     
-    .person-data__input-label_male,
-    .person-data__input-label_female {
+    .person-data__input-label-male,
+    .person-data__input-label-female {
         font-weight: 400;
         font-size: 14px;
         line-height: 19px;
@@ -106,8 +106,8 @@
         position: relative;
     }
     
-    .person-data__input-label_male:before,
-    .person-data__input-label_female:before {
+    .person-data__input-label-male:before,
+    .person-data__input-label-female:before {
         position: absolute;
         content: "";
         width: 10px;
@@ -119,9 +119,9 @@
         cursor: pointer;
     }
     
-    .person-data__radio-input_male:checked+.person-data__input-label_male:before,
-    .person-data__radio-input_female:checked+.person-data__input-label_female:before {
-        background: #9f9f9f;
+    .person-data__radio-input-male:checked+.person-data__input-label-male:before,
+    .person-data__radio-input-female:checked+.person-data__input-label-female:before {
+        background-color: #9f9f9f;
     }
     
     &__entering-information {
@@ -171,6 +171,7 @@
         &:before {
             position: absolute;
             content: "";
+            background-color: #fff;
             background-image: url(https://www.svgrepo.com/show/169312/check-mark.svg);
             opacity: 50%;
             width: 15px;

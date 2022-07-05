@@ -3,10 +3,10 @@
 
     &__controls {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     }
 
-    &__wrapper{
+    &__wrapper {
         display: flex;
         align-items: center;
         min-height: 75px;
@@ -44,6 +44,21 @@
             opacity: 1;
             cursor: pointer;
         }
+    }
+
+    &__search-link {
+        transition: opacity 0.5s;
+
+        &:hover {
+            opacity: 0.7;
+            cursor: pointer;
+        }
+
+        &:active {
+            opacity: 1;
+            cursor: pointer;
+        }
+
     }
 
     &__person-link {
@@ -85,23 +100,23 @@
 
     }
 
-    &__navigation{
+    &__navigation {
     position: absolute;
     min-width: 285px;
     min-height: 765px;
     top: 100%;
-    z-index: 1;
-    right: -105px;
-    background: #FFFFFF;;
+    z-index: 2;
+    right: -22%;
+    background-color: #ffffff;;
     display: none;
     box-shadow: 0 0 10px;
     }
 
-    &__navigation-wrapper{
+    &__navigation-wrapper {
         padding: 37px 0 0 34px;
     }
 
-    &__navigation-title{
+    &__navigation-title {
         display: block;
         text-transform: uppercase;
         font-weight: 700;
@@ -111,7 +126,7 @@
         margin: 0 0 24px;
     }
 
-    &__navigation-subtitle{
+    &__navigation-subtitle {
         text-transform: uppercase;
         font-weight: 400;
         font-size: 14px;
@@ -120,7 +135,7 @@
         margin: 20px 0 12px;
     }
 
-    &__navigation-link{
+    &__navigation-link {
         display: block;
         width: fit-content;
         font-weight: 400;
@@ -131,11 +146,11 @@
         margin: 0 0 11px;
         transition: opacity 0.5s, color 0.5s;
 
-        &:hover{
+        &:hover {
             opacity: 0.5;
         }
 
-        &:active{
+        &:active {
             color: #000000;
             opacity: 1;
         }
@@ -143,7 +158,7 @@
 
 }
 
-.display-block{
+.display-block {
     display: block;
 }
 
