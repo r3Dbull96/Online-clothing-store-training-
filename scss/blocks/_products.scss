@@ -1,4 +1,4 @@
-.products{
+.products {
 
     &__title-wrapper {
         display: flex;
@@ -63,6 +63,7 @@
         min-width: 360px;
         min-height: 420px;
         display: block;
+        box-sizing: content-box;
     }
     
     &__button {
@@ -120,7 +121,7 @@
         transition: display 0.5s;
     }
 
-    &__item-wrapper{
+    &__item-wrapper {
         padding: 0 18px 18px;
     }
     
@@ -145,7 +146,7 @@
     display: none;
 }
 
-.products__button-all {
+.products__catalog-link {
     padding: 14px 38px;
     border: 1px solid #ff6a6a;
     background-color: transparent;
@@ -154,6 +155,7 @@
     line-height: 19px;
     color: #f26376;
     transition: background 0.5s, color  0.5s;
+    text-decoration: none;
 
     &-wrapper {
         display: flex;

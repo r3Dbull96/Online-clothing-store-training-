@@ -12,19 +12,39 @@
     }
 }
 
-.product-header-text {
+.product-header-link {
     text-transform: uppercase;
     font-weight: 300;
     font-size: 14px;
     line-height: 17px;
     color: #636363;
+    text-decoration: none;
+    transition: opacity 0.5s;
 
-    &-color {
+    &:hover {
+        opacity: 0.7;
+        color: #636363;
+    }
+
+    &:active {
+        opacity: 1;
+        color: #222;
+    }
+
+    &-wrapper {
+        color: #636363;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+
+        @include mobile {
+            text-align: center;
+        }
+}
+
+}
+
+    .product-header-link-pink {
         color: $dark-pink;
         font-weight: 700;
     }
-
-    @include mobile {
-        text-align: center;
-    }
-}

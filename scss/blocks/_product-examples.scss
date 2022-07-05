@@ -7,6 +7,7 @@
     &__img {
         width: 100%;
         height: auto;
+        padding: 0 0 24px;
     }
 
     &__woman-none {
@@ -26,8 +27,33 @@
         @include mobile {
             display: none;
         }
-
     }
     
+    &__caption{
+        padding: 0 18px 18px;
+    }
+
+    &__caption-title{
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        margin: 0 0 12px;
+    }
+
+    &__caption-text {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: #5d5d5d;
+        margin: 0 0 18px;
+    }
+
+    &__caption-price {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #f16d7f;
+    }
 
 }

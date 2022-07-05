@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Registration</title>
+    <title>Catalog</title>
 </head>
 <body>
     <header class="header">
@@ -83,46 +83,180 @@
         </div>
 
     </header>
-    <main>
-        <section class="person-data">
-        <div class="person-data__title-wrapper">
-            <h2 class="person-data__title container">registration</h2>
-        </div>
-        <div class="container">
-            <div class="person-data__wrapper ">
-                <form class="person-data__section-login" action="#" method="post">
-                    <fieldset class="person-data__name">
-                        <legend class="person-data__section-caption">Your Name</legend>
-                        <input class="person-data__entering-information" type="text" name="firstname" id="firstname" placeholder="First Name">
-                        <input class="person-data__entering-information person-data__entering-information_margin-lastname" type="text" name="lastname" id="lastname" placeholder="Last Name">
-                        <div class="person-data__section-caption-wrapper">
-                            <input class="person-data__radio-input-male" type="radio" name="gender" id="male">
-                            <label class="person-data__input-label-male" for="male">Male</label>
-                            <input class="person-data__radio-input-female" type="radio" name="gender" id="female">
-                            <label class="person-data__input-label-female" for="female">Female</label>
-                        </div>
-                    </fieldset>
-                    <fieldset class="person-data__login">
-                        <legend class="person-data__section-caption">Login detalis</legend>
-                        <input class="person-data__entering-information" type="email" name="email-login" id="email-login" placeholder="Email">
-                        <input class="person-data__entering-information person-data__entering-information_margin-password" type="password" name="password-login" id="password-login" placeholder="Password">
-                        <p class="person-data__password-requirement">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>
-                    </fieldset>
-                    <button class="person-data__button" type="submit">join now <span class="person-data__button person-data__button_decoration">→</span></button>
-                </form>
-                <div class="person-data__section">
-                    <h2 class="person-data__section-title">loyalty has its perks</h2>
-                    <p class="person-data__text">Get in on the loyalty program where you can earn points and unlock serious perks.Starting with these as soon as you join:</p>
-                    <ul>
-                        <li class="person-data__text person-data__text-margin">15% off welcome offer</li>
-                        <li class="person-data__text person-data__text-margin">Free shipping, returns and exchanges on all orders</li>
-                        <li class="person-data__text person-data__text-margin">$10 off a purchase on your birthday</li>
-                        <li class="person-data__text person-data__text-margin">Early acces to products</li>
-                        <li class="person-data__text person-data__text-margin">Exclusive offers & rewards</li>
-                    </ul>
+    <header class="catalog-titlearea">
+        <div class="catalog-titlearea__wrapper">
+            <div class="container catalog-titlearea__wrapper-flex">
+                <h1 class="catalog-titlearea__title">new arrivals</h1>
+                <div class="catalog-titlearea__link-wrapper">
+                    <a class="catalog-titlearea__link" href="/index.html">home</a> 
+                    /
+                    <a class="catalog-titlearea__link" href="#">men</a> 
+                    / 
+                    <a class="catalog-titlearea__link catalog-titlearea__link_pink" href="#">
+                        new arrivals
+                    </a>
                 </div>
             </div>
         </div>
+    </header>
+    <main>
+        <section class="catalog container">
+            <div class="catalog__filter">
+                <div class="catalog__dropdown-filter-wrapper">
+                    <button type="button" class="catalog__button-filter">filter</button>
+                    <svg class="catalog__filter-icon" width="15" height="10" viewBox="0 0 15 10" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.833333 10H4.16667C4.625 10 5 9.625 5 9.16667C5 8.70833 4.625 8.33333 4.16667 8.33333H0.833333C0.375 8.33333 0 8.70833 0 9.16667C0 9.625 0.375 10 0.833333 10ZM0 0.833333C0 1.29167 0.375 1.66667 0.833333 1.66667H14.1667C14.625 1.66667 15 1.29167 15 0.833333C15 0.375 14.625 0 14.1667 0H0.833333C0.375 0 0 0.375 0 0.833333ZM0.833333 5.83333H9.16667C9.625 5.83333 10 5.45833 10 5C10 4.54167 9.625 4.16667 9.16667 4.16667H0.833333C0.375 4.16667 0 4.54167 0 5C0 5.45833 0.375 5.83333 0.833333 5.83333Z" fill="black"/>
+                    </svg>
+                    <div class="catalog__dropdown-filter-content">
+                        <div class="catalog__dropdown-filter-subtitle-wrapper">
+                            <button type="button" class="catalog__button-filter catalog__button-filter_pink">filter</button>
+                            <svg class="catalog__filter-icon catalog__filter-icon_pink" width="15" height="10" viewBox="0 0 15 10" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.833333 10H4.16667C4.625 10 5 9.625 5 9.16667C5 8.70833 4.625 8.33333 4.16667 8.33333H0.833333C0.375 8.33333 0 8.70833 0 9.16667C0 9.625 0.375 10 0.833333 10ZM0 0.833333C0 1.29167 0.375 1.66667 0.833333 1.66667H14.1667C14.625 1.66667 15 1.29167 15 0.833333C15 0.375 14.625 0 14.1667 0H0.833333C0.375 0 0 0.375 0 0.833333ZM0.833333 5.83333H9.16667C9.625 5.83333 10 5.45833 10 5C10 4.54167 9.625 4.16667 9.16667 4.16667H0.833333C0.375 4.16667 0 4.54167 0 5C0 5.45833 0.375 5.83333 0.833333 5.83333Z"/>
+                            </svg>
+                        </div>
+                        <button type="button" class="catalog__dropdown-button-title">category</button>
+                        <hr class="catalog__hr">
+                        <ul class="catalog__dropdown-filter-button-list">
+                            <li>
+                                <button class="catalog__dropdown-filter-button" type="button">Accessories</button>
+                            </li>
+                            <li>
+                                <button class="catalog__dropdown-filter-button" type="button">Bags</button>
+                            </li>
+                            <li>
+                                <button class="catalog__dropdown-filter-button" type="button">Denim</button>
+                            </li>
+                            <li>
+                                <button class="catalog__dropdown-filter-button" type="button">Hoodies & Sweatshirts</button>
+                            </li>
+                            <li>
+                                <button class="catalog__dropdown-filter-button" type="button">Jackets & Coats</button>
+                            </li>
+                            <li>
+                                <button class="catalog__dropdown-filter-button" type="button">Polos</button>
+                            </li>
+                            <li>
+                                <button class="catalog__dropdown-filter-button" type="button">Shirts</button>
+                            </li>
+                            <li>
+                                <button class="catalog__dropdown-filter-button" type="button">Shoes</button>
+                            </li>
+                            <li>
+                                <button class="catalog__dropdown-filter-button" type="button">Sweaters & Knits</button>
+                            </li>
+                            <li>
+                                <button class="catalog__dropdown-filter-button" type="button">T-Shirts</button>
+                            </li>
+                            <li>
+                                <button class="catalog__dropdown-filter-button catalog__dropdown-filter-button_margin" type="button">Tanks</button>
+                            </li>
+                        </ul>
+                        <button type="button" class="catalog__dropdown-button-title">brand</button>
+                        <hr class="catalog__hr">
+                        <button type="button" class="catalog__dropdown-button-title catalog__dropdown-button-title_margin">designer</button>
+                        <hr class="catalog__hr catalog__hr_margin">
+                    </div>
+                </div>
+                <div class="catalog__dropdown-menu-wrapper">
+                    <button class="catalog__dropdown-menu" type="button">trending now</button>
+                    <div class="catalog__dropdown-wrapper">
+                        <button class="catalog__dropdown-menu" type="button">size</button>
+                        <div class="catalog__dropdown-content-size">
+                            <div class="catalog__input-wrapper">
+                                <input class="catalog__input" type="checkbox" name="size" id="size-xs">
+                                <label class="catalog__checkbox-label" for="size-xs">xs</label>
+                            </div>
+                            <div class="catalog__input-wrapper">
+                                <input class="catalog__input" type="checkbox" name="size" id="size-s">
+                                <label class="catalog__checkbox-label" for="size-s">s</label>
+                            </div>
+                            <div class="catalog__input-wrapper">
+                                <input class="catalog__input" type="checkbox" name="size" id="size-m">
+                                <label class="catalog__checkbox-label" for="size-m">m</label>
+                            </div>
+                            <div class="catalog__input-wrapper">
+                                <input class="catalog__input" type="checkbox" name="size" id="size-l">
+                                <label class="catalog__checkbox-label" for="size-l">l</label>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="catalog__dropdown-menu catalog__dropdown-menu_margin-right" type="button">price</button>
+                </div>
+            </div>
+                <ul class="catalog__list-grid-container">
+                    <li class="catalog__item-product">
+                        <img class="catalog__img" src="/img/men_products-1.jpg" width="360" height="420" alt="men">
+                        <div class="catalog__text-wrapper">
+                            <h3 class="catalog__subtitle">ellery x m'o capsule</h3>
+                            <p class="catalog__text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                            <p class="catalog__price">$52.00</p>
+                        </div>
+                    </li>
+                    <li class="catalog__item-product">
+                        <img class="catalog__img" src="/img/catalog_product-men-1.jpg" width="360" height="420" alt="men">
+                        <div class="catalog__text-wrapper">
+                            <h3 class="catalog__subtitle">ellery x m'o capsule</h3>
+                            <p class="catalog__text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                            <p class="catalog__price">$52.00</p>
+                        </div>
+                    </li>
+                    <li class="catalog__item-product catalog__item-product_dispay-none">
+                        <img class="catalog__img" src="/img/men_products-2.jpg" width="360" height="420" alt="men">
+                        <div class="catalog__text-wrapper">
+                            <h3 class="catalog__subtitle">ellery x m'o capsule</h3>
+                            <p class="catalog__text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                            <p class="catalog__price">$52.00</p>
+                        </div>
+                    </li>
+                    <li class="catalog__item-product">
+                        <img class="catalog__img" src="/img/men_products-3.jpg" width="360" height="420" alt="men">
+                        <div class="catalog__text-wrapper">
+                            <h3 class="catalog__subtitle">ellery x m'o capsule</h3>
+                            <p class="catalog__text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                            <p class="catalog__price">$52.00</p>
+                        </div>
+                    </li>
+                    <li class="catalog__item-product">
+                        <img class="catalog__img" src="/img/catalog_product-men-2.jpg" width="360" height="420" alt="men">
+                        <div class="catalog__text-wrapper">
+                            <h3 class="catalog__subtitle">ellery x m'o capsule</h3>
+                            <p class="catalog__text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                            <p class="catalog__price">$52.00</p>
+                        </div>
+                    </li>
+                    <li class="catalog__item-product">
+                        <img class="catalog__img" src="/img/catalog_product-men-3.jpg" width="360" height="420" alt="men">
+                        <div class="catalog__text-wrapper">
+                            <h3 class="catalog__subtitle">ellery x m'o capsule</h3>
+                            <p class="catalog__text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                            <p class="catalog__price">$52.00</p>
+                        </div>
+                    </li>
+                    <li class="catalog__item-product">
+                        <img class="catalog__img" src="/img/catalog_product-men-4.jpg" width="360" height="420" alt="men">
+                        <div class="catalog__text-wrapper">
+                            <h3 class="catalog__subtitle">ellery x m'o capsule</h3>
+                            <p class="catalog__text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                            <p class="catalog__price">$52.00</p>
+                        </div>
+                    </li>
+                    <li class="catalog__item-product">
+                        <img class="catalog__img" src="/img/catalog_product-men-5.jpg" width="360" height="420" alt="men">
+                        <div class="catalog__text-wrapper">
+                            <h3 class="catalog__subtitle">ellery x m'o capsule</h3>
+                            <p class="catalog__text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                            <p class="catalog__price">$52.00</p>
+                        </div>
+                    </li>
+                    <li class="catalog__item-product">
+                        <img class="catalog__img" src="/img/catalog_product-men-6.jpg" width="360" height="420" alt="men">
+                        <div class="catalog__text-wrapper">
+                            <h3 class="catalog__subtitle">ellery x m'o capsule</h3>
+                            <p class="catalog__text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                            <p class="catalog__price">$52.00</p>
+                        </div>
+                    </li>
+                </ul>
         </section>
     </main>
     <footer>
